@@ -16,16 +16,6 @@ Bu proje, ESP32-CAM modülünü kullanarak:
 
 ---
 
-🏗️ Sistem Mimarisi
-
-┌──────────────┐     Firebase RTDB    ┌──────────────┐
-│  ESP32-CAM   │──────────────────────►│ Flutter App  │
-│   Kamera     │      IP Adresi        │   (Mobil)    │
-│   Sunucu     │◄──────────────────────│   İzleyici   │
-└──────────────┘    HTTP Stream        └──────────────┘
-
----
-
 🛠️ Teknolojiler
 
 Donanım Tarafı
@@ -49,20 +39,31 @@ Yazılım Tarafı
 ESP32-CAM Özellikleri
 
 ✅ Otomatik WiFi bağlantısı
+
 ✅ Firebase Anonymous Authentication
+
 ✅ Dinamik IP adresi yayınlama
+
 ✅ HTTP sunucu (3 endpoint)
+
 ✅ MJPEG video stream
+
 ✅ JPEG anlık görüntü
+
 ✅ Otomatik token yenileme
 
 Flutter Uygulama Özellikleri
 
 ✅ Gerçek zamanlı IP takibi
+
 ✅ Canlı video izleme
+
 ✅ Önizleme görüntüsü (2 saniyede bir)
+
 ✅ Hareket algılama bildirimleri
+
 ✅ InteractiveViewer ile zoom/pan
+
 ✅ Otomatik yeniden bağlanma
 
 ---
@@ -164,18 +165,6 @@ Mobil Uygulama Kullanımı
 - **Önizleme görüntüsü gösterilir
 - **"Canlı yayını aç" butonu ile stream başlar
 - **Hareket algılandığında bildirim gelir
-
-🔄 Video Stream Akışı
-
-ESP32-CAM                Flutter App
-    │                         │
-    ├─ Capture Frame          │
-    ├─ JPEG Encode           │
-    ├─ MJPEG Boundary        │
-    └─────HTTP Stream────────►│
-                              ├─ Parse MJPEG
-                              ├─ Extract Frame
-                              └─ Display Image
 
 ---
 
