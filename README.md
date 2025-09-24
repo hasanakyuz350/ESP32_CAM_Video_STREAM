@@ -9,9 +9,13 @@ ESP32-CAM modülü ile gerçek zamanlı video akışı ve hareket algılama sist
 Bu proje, ESP32-CAM modülünü kullanarak:
 
 📹 Canlı video akışı (MJPEG stream)
+
 📸 Anlık görüntü yakalama
+
 🔔 Hareket algılama bildirimleri
+
 🌐 Dinamik IP yönetimi (Firebase üzerinden)
+
 📱 Mobil uygulama ile uzaktan erişim
 
 ---
@@ -70,9 +74,9 @@ Flutter Uygulama Özellikleri
 
 📡 API Endpoints
 
-- **ESP32-CAM üzerindeki HTTP sunucu:
+ESP32-CAM üzerindeki HTTP sunucu:
 
---->EndpointMethodAçıklama/GETDurum kontrolü/jpgGETTek JPEG görüntü/streamGETMJPEG video stream
+- **EndpointMethodAçıklama/GETDurum kontrolü/jpgGETTek JPEG görüntü/streamGETMJPEG video stream
 
 ---
 
@@ -132,20 +136,35 @@ Uygulamayı çalıştırın:
 📊 Firebase Veritabanı Yapısı
 
 json{
+
   "devices": {
+  
     "cam-01": {
+    
       "status": {
+      
         "ip": "192.168.1.100",
+        
         "ts": 1234567890
+        
       },
+      
       "events": {
+      
         "eventId": {
+        
           "type": "motion",
+          
           "timestamp": 1234567890
+          
         }
+        
       }
+      
     }
+    
   }
+  
 }
 
 ---
