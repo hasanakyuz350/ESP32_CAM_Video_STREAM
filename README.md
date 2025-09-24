@@ -135,8 +135,6 @@ Uygulamayı çalıştırın:
 
 📊 Firebase Veritabanı Yapısı
 
-json{
-
   "devices": {
   
     "cam-01": {
@@ -164,8 +162,6 @@ json{
     }
     
   }
-  
-}
 
 ---
 
